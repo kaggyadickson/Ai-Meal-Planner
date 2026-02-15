@@ -1,10 +1,26 @@
+title Ai Meal Planner a person gives the ai in the app the ingredients they have and the ai will help give them the meal to cook and how and how long it takes to be ready the app has where a person puts all that the app aldo has where you save your recipe 
 <!DOCTYPE html>
 <html>
 <head>
 <title>AI Meal Planner</title>
 </head>
+
 <body>
 <h1>AI Meal Planner</h1>
-<p>Tell me your ingredients and I will suggest meals.</p>
+<p>Enter your ingredients:</p>
+
+<input type="text" id="ingredients" placeholder="Example: rice, eggs, tomatoes">
+<button onclick="suggestMeal()">Get Meal Idea</button>
+
+<p id="result"></p>
+
+<script>
+function suggestMeal() {
+  var ing = document.getElementById("ingredients").value;
+  document.getElementById("result").innerHTML =
+    "You entered: " + ing + ". Recipe suggestions coming soon!";
+}
+</script>
+
 </body>
-</html>
+  </html>
